@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Tajawal:wght@300;400;500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7dffe9;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h3 {
+  color: #000;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+h3 code {
+  font-size: 18px;
+  color: #eee;
+  background-color: #333;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-family: inherit;
+  direction: rtl;
+}
+
+#tags {
+  display: flex;
+  justify-content: end;
+}
+
+.tag {
+  font-family: inherit;
+  background-color: #456ff7;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #30cf58;
+}
