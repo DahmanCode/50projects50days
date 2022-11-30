@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   margin: 0;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
 }
 
 h3 {
@@ -65,4 +65,20 @@ textarea {
 
 .tag.highlight {
   background-color: #30cf58;
+}
+
+.twitter {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  text-decoration: none;
+  color: #456ff7;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.twitter i {
+  padding-right: 10px;
+  font-size: 24px;
 }
