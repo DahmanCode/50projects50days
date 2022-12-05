@@ -5,7 +5,7 @@ const rightBtn = document.getElementById('right')
 
 let activeSlide = 0
 
-rightBtn.addEventListener('click', () => {
+function toRight() {
   activeSlide++
 
   if(activeSlide > slides.length - 1) {
@@ -14,9 +14,9 @@ rightBtn.addEventListener('click', () => {
 
   setBgToBody()
   setActiveSlide()
-})
+}
 
-leftBtn.addEventListener('click', () => {
+function toLeft() {
   activeSlide--
 
   if(activeSlide < 0) {
@@ -25,6 +25,26 @@ leftBtn.addEventListener('click', () => {
 
   setBgToBody()
   setActiveSlide()
+}
+
+rightBtn.addEventListener('click', () => {
+  toRight()
+})
+
+body.addEventListener('keydown', e => {
+  
+  if(e.keyCode === 39)
+    toRight()
+})
+
+leftBtn.addEventListener('click', () => {
+  toLeft()
+})
+
+body.addEventListener('keydown', e => {
+  
+  if(e.keyCode === 37)
+    toLeft()
 })
 
 setBgToBody()

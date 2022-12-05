@@ -59,26 +59,40 @@ body::before {
   position: fixed;
   background-color: transparent;
   color: #fff;
-  padding: 10px 20px;
-  font-size: 30px;
+  padding: 35px;
+  font-size: 25px;
   border: 2px solid rgb(135, 250, 173);
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 50%;
   transition: .2s ease;
+}
+
+.arrow i {
+  position: fixed;
+  top: 30%;
 }
 
 .arrow:hover {
   border: none;
   background-color: rgb(135, 250, 173);
-  color: #999;
+  color: #222;
 }
 
 .left-arrow {
-  left: calc(15vw - 65px);
+  left: calc(15vw - 40px);
+}
+
+
+.left-arrow i {
+  left: 15%;
 }
 
 .right-arrow {
-  right: calc(15vw - 65px);
+  right: calc(15vw - 40px);
+}
+
+.right-arrow i {
+  right: 15%;
 }
