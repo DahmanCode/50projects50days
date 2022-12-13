@@ -12,7 +12,7 @@ setTimeout(getData, 4000)
 
 function getData() {
   let img = document.createElement('img')
-  img.src= 'images/img.jpg'
+  img.src= 'images/bg.jpeg'
   header.append(img)
 
 
