@@ -27,7 +27,7 @@ addBtn.addEventListener('click', () => {
     const textArea = note.querySelector('textarea')
   
     textArea.value = text
-    main.innerHTML = marked(text)
+    // main.innerHTML = marked(text)
   
     deleteBtn.addEventListener('click', () => {
       note.remove()
