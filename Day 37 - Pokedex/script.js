@@ -62,5 +62,3 @@ const createPokemonCard = (pokemon) => {
 }
 
 fetchPokemons()
-
-bastiobot
