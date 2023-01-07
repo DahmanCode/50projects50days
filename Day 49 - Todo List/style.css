@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    135deg,
+    #7418f9,
+    #5ef8f5
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  margin: 0;
+}
+
+.container {
+  width: 40%;
+  min-width: 450px;
+  padding: 30px 40px;
+}
+
+#newtask {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+}
+
+#newtask input {
+  width: 70%;
+  height: 70%;
+  border: 2px solid #50d1cf;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px;
+  color: #111;
+  position: relative;
+  border-radius: 5px;
+}
+
+#newtask input:focus {
+  outline: none;
+  border-color: #50d1cf;
+}
+
+#newtask button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #50d1cf;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#newtask button:active {
+  transform: scale(.94);
+}
+
+#tasks {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+  width: 100%;
+  position: relative;
+}
+
+.task {
+  background-color: #fff;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #aee6e5;
+  cursor: pointer;
+}
+
+.task span {
+  font-size: 15px;
+}
+
+.task button {
+  background-color: #ff7a85;
+  color: #fff;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.task button:hover {
+  background-color: #fc2a3c;
+  
+}
+
+.completed {
+  text-decoration: line-through;
+}
