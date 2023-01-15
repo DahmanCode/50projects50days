@@ -6,11 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
-  <title>Todo List</title>
+  <title>Catch The Insect</title>
 </head>
 <body>
 
-  
+  <div class="screen">
+    <h1>Catch The Insect</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+
+  <div class="screen">
+    <h1>What is your "favorite" insect?</h1>
+    <ul class="insects-list">
+      <li>
+        <button class="choose-insect-btn">
+          <p>Bee</p>
+          <img src="http://pngimg.com/uploads/bee/bee_PNG74696.png" alt="bee">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Ladybug</p>
+          <img src="http://pngimg.com/uploads/ladybug/ladybug_PNG3961.png" alt="ladybug">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Wasp</p>
+          <img src="http://pngimg.com/uploads/wasp/wasp_PNG40.png" alt="wasp">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Sider</p>
+          <img src="http://pngimg.com/uploads/spider/spider_PNG41.png" alt="spider">
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="screen game-container" id="game-container">
+    <h3 id="time" class="time">Time: 00:00</h3>
+    <h3 id="score" class="score">Score: 0</h3>
+    <div id="message" class="message">
+      <h5>
+        Are you annoyed yet? <br>
+        You are playing an impossible game!!
+      </h5>
+      <button class="btn" onclick="window.location.reload()">Try Again</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
