@@ -5,6 +5,7 @@ const game_container = document.getElementById('game-container')
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
 const message = document.getElementById('message')
+const again = document.getElementById('again')
 
 let seconds = 0
 let score = 0
@@ -20,13 +21,11 @@ choose_insect_btns.forEach(btn => {
     selected_insect = { src, alt }
     screens[1].classList.add('up')
     setTimeout(createInsect, 1000)
-    startGame()
+    startGame
   })
 })
 
-function startGame() {
-  setInterval(increaseTime, 1000)
-}
+var startGame = setInterval(increaseTime, 1000)
 
 function increaseTime() {
   let m = Math.floor(seconds / 60)
@@ -48,6 +47,22 @@ function createInsect() {
   insect.addEventListener('click', catchInsect)
 
   game_container.appendChild(insect)
+
+  again.addEventListener('click', () => {
+    score = 0
+    scoreEl.innerHTML = `Score: ${score}`
+    message.classList.remove('visible')
+    for(let i = 0; i < screens.length; i++) {
+      screens[i].classList.remove('up')
+    }
+    game_container.removeChild(insect)
+
+    clearInterval(startGame)
+    seconds = 0
+    startGame = setInterval(increaseTime, 1000)
+
+  })
+  
 }
 
 function getRandomLocation() {
@@ -79,3 +94,12 @@ function increaseScore() {
   }
   scoreEl.innerHTML = `Score: ${score}`
 }
+  
+  // function tryAgain() {
+  //   score = 0
+  //   seconds = 0
+  //   insect.classList.remove('insect')
+  //   for(let i = 0; i < screens.length; i++) {
+  //     screens[i].classList.remove('up')
+  //   }
+  // }

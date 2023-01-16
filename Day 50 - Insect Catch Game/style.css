@@ -151,3 +151,13 @@ h1 {
   width: 100px;
   height: 100px; 
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h3, p, h5 {
+    font-size: 14px;
+  }
+}
