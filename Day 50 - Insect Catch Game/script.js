@@ -59,7 +59,7 @@ function createInsect() {
 
     clearInterval(startGame)
     seconds = 0
-    startGame = setInterval(increaseTime, 1000)
+    startGame = stop()
 
   })
   
